@@ -1,0 +1,111 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#4c454d,#022450); /* Updated background color */
+    color: #f5f3f3;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+/* Form styling */
+.form1 {
+    margin-bottom: 20px;
+    border: none; /* Added border */
+    border-radius: 5px; /* Added border radius */
+    padding: 15px; /* Added padding */
+    background-color: transparent; /* Added background color */
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 8px;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+
+    background-color: #fff;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    overflow-x: auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Responsive table */
+@media (max-width: 767px) {
+    .table {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Align items in the center vertically */
+        justify-content: center; /* Justify content in the center horizontally */
+    }
+}
+
+/* Success message styling */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.alert-success.hidden {
+    display: none;
+}

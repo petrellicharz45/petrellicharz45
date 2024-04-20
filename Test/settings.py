@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'users',
+       
         'rest_framework',
     'django.contrib.staticfiles',
 ]
@@ -120,7 +121,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+
+
 STATIC_URL = 'static/'
+
+# Add the directory where static files will be collected during deployment
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+# Define the directory where static files will be stored for production
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
